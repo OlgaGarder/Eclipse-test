@@ -1,0 +1,40 @@
+.footer {
+    position: absolute; 
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    min-height: 100px; 
+    width: 100%;
+    background-color: $light-black;
+    padding: 26px 0;
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &-about {
+        padding-top: 13px;
+        &__text {
+            cursor: pointer;
+            font-family: $rb;
+            font-size: 20px;
+            line-height: 23px;
+            color: $white;
+            transition: all 0.3s;
+            &:hover {
+                display: block;
+                color: $white;
+                border-bottom: 1px solid $white;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .footer {
+        &-logo {
+            img {
+                width: 70%;
+            }
+        }
+    }
+}

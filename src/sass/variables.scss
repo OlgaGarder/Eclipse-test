@@ -1,0 +1,27 @@
+//colors
+$black: #000000;
+$light-black: #333333;
+$light-blue:  #78DEC7;;
+$light-purple: #FB7AFC;
+$purple: #D62AD0;
+$pink: #FBC7F7;
+$white: #ffffff;
+$grey: #C4C4C4;
+
+//fonts
+$rb: 'Roboto', sans-serif;
+
+// Media size
+
+
+//$phones: 320px;
+$phones-sm: 640px;
+$desktops-sm: 960px;
+$desktops-md: 1200px;
+$desktops-lg: 1200px;
+
+// class colors
+
+.bg-blue {
+    background: $light-blue;
+}

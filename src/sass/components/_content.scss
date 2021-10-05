@@ -1,0 +1,99 @@
+.main-page {
+    position: relative;
+    margin-top: 175px;
+}
+
+.content {
+    padding: 0px 0 75px 0;
+    &-items {
+        display: grid;
+        grid-template: repeat(2,minmax(410px,auto))/repeat(3,410px);
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+    &-item-form {
+        text-align: center;
+        background: $light-blue;
+        padding: 180px 105px;
+    }
+    &-item-info {
+        padding: 30px;
+        background: $purple;
+    }
+    &-item {
+        height: auto;
+        &__descr {
+            display: block;
+            padding: 30px;
+            min-height: 350px;
+        }
+        &__text {
+            font-size: 20px;
+            line-height: 23px;
+            color: $black;
+        }
+        &__purple-light {
+            background: $light-purple;
+            border-radius: 30px;
+            height: auto;
+        }
+        &__bg-pink {
+            background: $pink;
+            height: auto;
+        }
+        &__bg-img {
+            background: url('../img/bg-card.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: 1350px) {
+    .main-page {
+        margin-top: 0px;
+    }
+    .content {
+        padding: 150px 0 60px 0;
+        &-items {
+            grid-template-columns: repeat(auto-fit,270px);
+            justify-content: space-between;
+        }
+        &-item-form {
+            padding: 180px 35px;
+        }
+        &-item-info {
+            padding: 15px;
+        }
+    }
+}
+@media (max-width: 600px) {
+    .content {
+        &-items {
+            grid-template-columns: 1fr;
+            justify-content: center;
+            grid-template-rows: 300px;
+            row-gap: 20px;
+        }
+        &-item {
+            &-form {
+                padding: 125px 50px;
+            }
+            &__descr {
+                padding: 15px;
+                min-height: 300px;
+            }
+            &__purple-light {
+                height: 300px;
+            }
+            &__bg-pink {
+                height: 300px;
+            }
+            &__bg-img {
+                height: 300px;
+            }
+        }
+    }
+}
