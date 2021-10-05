@@ -1,7 +1,7 @@
 # Eclipse-test
-#Test 
-#Установка 
-#npm i 
 #
-#Запуск 
-#gulp
+Установка:
+npm i 
+#
+Запуск 
+gulp
